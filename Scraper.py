@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 link=[]
+name=open('name.txt','wt')
+Specialties=open('Specialties.txt','wt')
 
 def Scarpe(link):
 	c=[]
@@ -16,19 +18,20 @@ def Scarpe(link):
 		for i in range(0,len(d)):
 			if d[i]=="Professional":
 				break
+			elif d[i]=="Gender":
+					break
 			elif d[i]=="Specialties":
 					continue
 			elif d[i]=="Board-Certified":
 					continue
 			else: 
 				c.append(d[i])
-	print("\n"+a)
+	print(a)
 	print(' '.join(c))
-
+	name.write(a+"\n")
+	Specialties.write(' '.join(c)+"\n")
 linkamt=int(input("Number of Links: "))
 for i in range(0,linkamt):
 	link.append(input("Enter URL: "))
-
 for a in range(0,linkamt):
 	Scarpe(link[a])
-
