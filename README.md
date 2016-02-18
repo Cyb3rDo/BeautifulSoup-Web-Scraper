@@ -7,7 +7,7 @@ Custom web scraper design to scrape Names, Titles and Specialties from http://we
 Open Terminal
 ```
 ```javascript
-Type: sudo apt-get install python3-bs4
+sudo apt-get install python3-bs4
 ```
 
 #Mac
@@ -15,18 +15,18 @@ Type: sudo apt-get install python3-bs4
 Open Terminal
 ```
 ```javascript
-Type: sudo easy_install pip
+sudo easy_install pip
 ```
 ```javascript
-Type: sudo pip install bs4
-``
+sudo pip install bs4
+```
 
 #Windows
 ```javascript
 Open Command Prompt 
 ```
 ```javascript
-Type: pip install beautifulsoup4
+pip install beautifulsoup4
 ```
 You may have to use the full path:
 ```javascript
