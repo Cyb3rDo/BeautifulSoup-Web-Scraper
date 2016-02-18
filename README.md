@@ -19,6 +19,7 @@ Type: sudo easy_install pip
 ```
 ```javascript
 Type: sudo pip install bs4
+``
 
 #Windows
 ```javascript
