@@ -16,13 +16,9 @@ def Scarpe(link):
 	for sp in Special:
 		d=sp.text.split()
 		for i in range(0,len(d)):
-			if d[i]=="Professional":
+			if d[i]=="Professional" or d[i]=="Gender":
 				break
-			elif d[i]=="Gender":
-					break
-			elif d[i]=="Specialties":
-					continue
-			elif d[i]=="Board-Certified":
+			elif d[i]=="Specialties" or d[i]=="Board-Certified":
 					continue
 			else: 
 				c.append(d[i])
